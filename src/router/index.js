@@ -47,7 +47,7 @@ export const router = new VueRouter({
         },
     ],
     scrollBehavior(to, from, savedPosition) {
-        // ожидаемый возврат, чтобы прокрутить до какой позиции
+        // возврат страницы вверх при обновлении и переходе (по пагинации)
         return { x: 0, y: 0 }
     }
 })
